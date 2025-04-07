@@ -51,7 +51,8 @@ export default function SettingsClientPage() {
 
             <Card className="bg-[#2a2642]/80 border-[#fdeff0]/10 shadow-lg">
               <CardContent className="p-0">
-                <TabsList className="flex flex-col w-full bg-transparent h-auto">
+                <Tabs defaultValue="profile" orientation="vertical">
+                  <TabsList className="flex flex-col w-full bg-transparent h-auto">
                   <TabsTrigger
                     value="profile"
                     className="justify-start px-6 py-3 data-[state=active]:bg-[#393459]/30 data-[state=active]:text-[#ff5a7e] rounded-none border-l-2 border-transparent data-[state=active]:border-[#ff5a7e]"
@@ -81,6 +82,8 @@ export default function SettingsClientPage() {
                     Billing
                   </TabsTrigger>
                 </TabsList>
+                </Tabs>
+                
               </CardContent>
             </Card>
 
